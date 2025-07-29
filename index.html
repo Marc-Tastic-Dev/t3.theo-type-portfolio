@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marc-Anthony | Minimal Portfolio</title>
+  <style>
+    /* RESET */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a {
+      color: #64ffda;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover, a:focus {
+      color: #52e0c4;
+      outline: none;
+    }
+    main {
+      flex: 1;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    header {
+      padding: 2rem 1.5rem 0;
+      text-align: center;
+    }
+    header h1 {
+      font-weight: 900;
+      font-size: 3rem;
+      margin: 0;
+      letter-spacing: -0.02em;
+    }
+    header p {
+      margin-top: 0.25rem;
+      font-weight: 400;
+      color: #888;
+      font-size: 1.125rem;
+    }
+    section {
+      margin-top: 3.5rem;
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.5rem;
+    }
+    ul.projects {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    @media (min-width: 480px) {
+      ul.projects {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    ul.projects li {
+      background: #1e1e1e;
+      padding: 1.25rem 1.5rem;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 0 10px rgba(100,255,218,0.1);
+    }
+    ul.projects li:hover {
+      background: #64ffda10;
+      box-shadow: 0 0 20px #64ffda66;
+    }
+    ul.projects li h3 {
+      margin: 0 0 0.5rem 0;
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+    ul.projects li p {
+      margin: 0 0 1rem 0;
+      flex-grow: 1;
+      color: #aaa;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.875rem;
+      color: #555;
+      border-top: 1px solid #333;
+      user-select: none;
+    }
+    /* subtle fade in on load */
+    body {
+      opacity: 0;
+      animation: fadeIn 0.6s ease forwards;
+      animation-delay: 0.2s;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Marc-Anthony</h1>
+  <p>Full-stack Dev & Designer. Building clean, minimal vibes.</p>
+</header>
+
+<main>
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul class="projects">
+      <li onclick="window.open('#', '_blank')">
+        <h3>Zypedia</h3>
+        <p>AI-powered wiki with built-in assistant Kimi. Knowledge flex.</p>
+        <a href="#" tabindex="-1">View Project →</a>
+      </li>
+      <li onclick="window.open('#', '_blank')">
+        <h3>MarcScan</h3>
+        <p>PDF scanner for macOS, fast AF with OCR tech.</p>
+        <a href="#" tabindex="-1">View Project →</a>
+      </li>
+      <li onclick="window.open('#', '_blank')">
+        <h3>super jazzy LLM</h3>
+        <p>I built my own large language model. AI flex fr fr.</p>
+        <a href="#" tabindex="-1">View Project →</a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact" style="margin-top: 4rem;">
+    <h2>Contact</h2>
+    <p>Wanna collab or roast AI? Hit me up at <a href="mailto:marcanthonymputela@icloud.com">marc@crazydev.club</a></p>
+  </section>
+</main>
+
+<footer>
+  © 2025 Marc-Anthony. Coded with chaos 💀
+</footer>
+
+</body>
+</html>
